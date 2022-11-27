@@ -40,6 +40,24 @@ nav img:hover{
     transition: 1s;
     text-shadow: 1px 2px black;
 }
+@media(max-width: 700px){
+    nav img{
+        width: 40px;
+    }
+    .nav-links ul li a{
+        font-size: 12px;
+    }
+    .nav-links ul li{
+        padding: 4px 5px;
+    }
+    .landing-quote h1{
+        font-size: 25px;
+    }
+    .landing-quote p{
+        font-size: 18px;
+        line-height: normal;
+    }
+}
 .shop{
 height: 100%;
 width: 100%;
@@ -54,6 +72,9 @@ padding-bottom: 90px;
     font-size: 27px;
     padding: 25px 0px;
     text-align: center;
+}
+.shop span{
+    color: white;
 }
 .shop-row{
     width: 90%;
@@ -107,31 +128,6 @@ padding-bottom: 90px;
     background-image: url(./Images/tocak.webp);
 }
 
-
-@media(max-width: 700px){
-    .shop-header{
-        font-size: 17px;
-        padding: 20px 0px;
-    }
-    .shop-col{
-        padding: 20px 0px;
-        margin: auto;
-    }
-    .card{
-        width: 120px;
-        height: 170px;
-    }
-    .card h2{
-        font-size: 14px;
-    }
-    .card p{
-        font-size: 8px;
-    }
-    .card h3{
-        padding: 0;
-        font-size: 14px;
-    }
-}
 .shop-row h2{
     padding: 20px;
 }
@@ -149,4 +145,146 @@ padding-bottom: 90px;
 }
 .row3{
     padding-top: 50px;
+}
+@media(max-width: 700px){
+    .shop{
+        width: 100%;
+    }
+    .col2{
+        text-align: center;
+    }
+    .shop-col{
+        flex-direction: column;
+        margin: auto;
+    }
+    .card{
+        width: 200px;
+        height: 170px;
+        margin: 10px auto;
+    }
+    .card h2{
+        font-size: 15px;
+    }
+    .card p{
+        font-size: 10px;
+    }
+    .card h3{
+        font-size: 18px;
+        padding: 0;
+    }
+    .halo{
+        font-size: 20px;
+    }
+    .shop h1{
+        font-size: 25px;
+        height: 5%;
+    }
+}
+.colab-item {
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 5px 20px 0 #000000;
+    transition: 0.3s ease ;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+  }
+.colab-item:hover {
+    box-shadow: 0px 5px 20px 0 #ff00002c;
+    transform: translateY(-5px);
+  }
+.colab-item1{
+    background-image: url(./Images/revolt-colab.jpg);
+}
+.colab-item2{
+    background-image: url(./Images/bosniankingdom-colab.png);
+}
+.colab-item3{
+    background-image: url(./Images/rulof.png);
+}
+.icon {
+    width: 70px;
+    margin: auto;
+    height: 70px;
+  }
+  .social-item{
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 5px 20px 0 #000000;
+    transition: 0.3s ease ;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+  }
+  .social-item:hover {
+    box-shadow: 0px 5px 20px 0 #ff0000;
+    transform: translateY(-5px);
+  }
+  .social-item1{
+    background-image:url(./Images/facebook.png);
+  }
+  .social-item3{
+    background-image:url(./Images/youtube.png);
+  }
+  span{
+    color: rgb(255, 0, 0);
+}
+.footer{
+    width: 100%;
+    padding: 20px;
+}
+.footer-wrapper{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.footer-wrapper h1{
+    font-size: 25px;
+}
+.left-wrap{
+    display: flex;
+    align-items: center;
+justify-content: space-between;
+}
+.copy-right{
+    width: 100%;
+    height: 70px;
+    background-color: rgba(187, 187, 187, 0.356);
+}
+.copy-wrap{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+}
+@media(max-width: 700px){
+    .footer{
+        height: 100vh;
+        padding: 0;
+    }
+    .links{
+        flex-direction: column;
+    }
+
 }
