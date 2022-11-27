@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Black Ops One', cursive;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 70px;
+    filter: drop-shadow(5px 5px 5px rgb(255, 0, 0, 0.3));
+}
+nav img:hover{
+    filter: drop-shadow(5px 5px 5px rgb(255, 0, 0, 0.8));
+    transition: 1s;
+    transform: translateY(5px);
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display:inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 26px;
+    letter-spacing: 1px;
+    text-shadow: 1px 1.5px rgb(255, 0, 0);
+}
+.nav-links ul li a:hover{
+    color: rgb(255, 0, 0);
+    transition: 1s;
+    text-shadow: 1px 2px black;
+}
+.shop{
+height: 100%;
+width: 100%;
+text-align: center;
+background-image: url(./Images/products-pozadina.jpg);
+background-position: center;
+background-size: cover;
+justify-content: space-between;
+padding-bottom: 90px;
+}
+.shop-header{
+    font-size: 27px;
+    padding: 25px 0px;
+    text-align: center;
+}
+.shop-row{
+    width: 90%;
+    margin: auto;
+}
+.shop-col{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+.card{
+    width: 260px;
+    height: 280px;
+    display: inline-block;
+    border-radius: 15px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+.card h3{
+    font-size: 30px;
+    padding-top: 75px;
+}
+.card1{
+    background-image: url(./Images/tocak.webp);
+}
+.card2{
+    background-image: url(./Images/skate7.jpg);
+}
+.card3{
+    background-image: url(./Images/osovina.webp);
+}
+.card4{
+    background-image: url(./Images/wax.webp);
+}
+.card6{
+    background-image: url(./Images/skate7.jpg);
+}
+.card7{
+    background-image: url(./Images/osovina.webp);
+}
+.card8{
+    background-image: url(./Images/wax.webp);
+}
+.card9{
+    background-image: url(./Images/tocak.webp);
+}
+
+
+@media(max-width: 700px){
+    .shop-header{
+        font-size: 17px;
+        padding: 20px 0px;
+    }
+    .shop-col{
+        padding: 20px 0px;
+        margin: auto;
+    }
+    .card{
+        width: 120px;
+        height: 170px;
+    }
+    .card h2{
+        font-size: 14px;
+    }
+    .card p{
+        font-size: 8px;
+    }
+    .card h3{
+        padding: 0;
+        font-size: 14px;
+    }
+}
+.shop-row h2{
+    padding: 20px;
+}
+.shop-row button{
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    color: black;
+    background-color: transparent;
+    transition: all ease 1s;
+}
+.shop-row button:hover{
+    width: 200px;
+    box-shadow: 3px 5px black;
+}
+.row3{
+    padding-top: 50px;
+}
